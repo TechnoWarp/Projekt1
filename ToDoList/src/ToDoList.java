@@ -5,7 +5,6 @@ import java.util.List;
 import java.util.Set;
 import java.util.TreeSet;
 
-
 public class ToDoList {
 
 	public static Set<Event> list = new LinkedHashSet<Event>();

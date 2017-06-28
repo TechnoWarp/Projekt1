@@ -2,15 +2,17 @@ import java.util.Set;
 import java.util.TreeSet;
 
 public class START {
-
 		  public static void main(String[] args) {
-	//		  Event e1 = new Event("Jobba");
-	//		  Event e2 = new Event("Bajsa");
-	//		  Event e3 = new Event("Sova");
+			  String postNamn;
+			  postNamn = "e1";
+			  
+			  Event e1 = new Event("Jobba");
+			  Event e2 = new Event("Bajsa");
+			  Event e3 = new Event("Sova");
 			  
 //			System.out.println(Jobba.timeStamp);
 //			System.out.println(Bajsa.item);
-//			System.out.println(Sova.attGöra);
+//			System.out.println(Event.doneUndone);
 //			  
 			    ToDoList list = new ToDoList();
 			    list.add(new Event("Jobba"));
@@ -19,7 +21,9 @@ public class START {
 				
 				System.out.println(ToDoList.list.size()+ " i LinkedHashSet");
 				
-	//			doneUndone();
+				e1.doneUndone();
+				e1.doneUndone();
+				e1.doneUndone();
 				
 		  }
 
