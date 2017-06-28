@@ -47,7 +47,7 @@ public class Start {
 		
 		ToDo.gjord(3);
 		
-		ToDo.listAlla();
+//		ToDo.listAlla();
 		
 	}
 	

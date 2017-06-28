@@ -1,10 +1,12 @@
 
+import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
 
 
 public class ToDo {
 	public static List<Sak> Alla = new LinkedList<Sak>();
+
 	
 	public static void add (String input) {
 		System.out.println("Sak skapades och lades till i Arraylist ALLA");
@@ -31,13 +33,22 @@ public class ToDo {
 			}
 		}
 	
-	public static void gjord(int nr)	{
-		Alla.remove(Alla.indexOf(nr));
-	//	Sak.ändraStatus(Alla.indexOf(nr));
+	//public static void gjord(int nr)	{	 // ÄNDRA STATUS pipat index
+	//	Alla.remove(Alla.indexOf(nr));		// DEFEKT KOD UTAN ERROR
+	//	ToDo.listAlla();
+	//	Meny.meny();
+	//}
+	//	Alla.indexOf(nr)ändraStatus();
+		
+		public static void ändraStatus(){
+			int i = 0;
+			for(Sak grej : Alla){		
+				grej.getNr();
+				System.out.println(grej.getNr());
+				i++;
+			}
+		}
 		
 		
-		
-		
-	}
 		
 }
