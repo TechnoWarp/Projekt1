@@ -40,8 +40,14 @@ public class Start {
 		
 		System.out.println("**********************");
 		
-		Scan.scan();
+//		Scan.scan();
 		
+		
+//		Meny.meny();
+		
+		ToDo.gjord(3);
+		
+		ToDo.listAlla();
 		
 	}
 	

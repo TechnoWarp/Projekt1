@@ -32,7 +32,7 @@ public class Sak {
 	}
 
 	public String getBeskrivning() {
-		String returnValue = nr  +" "+ statusString +" "+ time +" "+ beskrivning  ;
+		String returnValue = nr + " "+ statusString +" "+ time +" "+ beskrivning  ;
 		return returnValue;
 	}
 
@@ -50,5 +50,7 @@ public class Sak {
 	}
 	public int getNr() {
 		return nr;
+	
+		
 	}
 }		

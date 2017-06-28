@@ -23,10 +23,21 @@ public class ToDo {
 	}
 	
 		public static void listAlla(){
-			for(Sak s : Alla){
-				System.out.println(s.getBeskrivning());
+			int i = 0;
+			System.out.println("index" + "  " + "id");
+			for(Sak s : Alla){		
+				System.out.println(i + "      " + s.getBeskrivning());
+				i++;
 			}
 		}
+	
+	public static void gjord(int nr)	{
+		Alla.remove(Alla.indexOf(nr));
+	//	Sak.ändraStatus(Alla.indexOf(nr));
 		
+		
+		
+		
+	}
 		
 }
