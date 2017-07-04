@@ -32,7 +32,7 @@ public class Scan {
 		System.out.println("Tryck in det index på den sak du vill förstöra helt!");
 		try {
 			int nr = in.nextInt();
-			System.out.println(nr);
+			//		System.out.println(nr);
 			ToDo.taBort(nr);
 		}
 		catch (NumberFormatException e){	
@@ -46,7 +46,7 @@ public class Scan {
 		System.out.println("Skriv nåt som du vill söka rätt på...genast!");
 		try {
 			String ord = in.nextLine();
-			System.out.println(ord);
+//		    System.out.println(ord);
 			ToDo.kolla(ord);
 		}
 		catch (NumberFormatException e){	

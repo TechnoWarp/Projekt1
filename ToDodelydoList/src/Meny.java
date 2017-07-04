@@ -11,10 +11,10 @@ public class Meny {
 
 	public static void meny() {
 		ToDo.listAlla();
-		System.out.println("-------------------------VÄLJ & SVÄLJ!---------------------------");
-		System.out.println("1.) Lista Dina uppdrag.  2.) Nytt uppdrag       3.) Ändra Status");
-		System.out.println("4.) Ta bort valfri.      5.) Ta bort Avklarade  6.) error");
-		System.out.println("7.) Sök                  8.) Avsluta");
+		System.out.println("---------------------------VÄLJ & SVÄLJ!-------------------------");
+		System.out.println("| 1.) Lista Dina uppdrag.| 4.) Ta bort valfri.   | 7.) Sök.     |");
+		System.out.println("| 2.) Nytt uppdrag.      | 5.) Ta bort Avklarade.| 8.) Avsluta. |");
+		System.out.println("| 3.) Ändra Status.      | 6.) error...          |              |");
 		System.out.println("-----------------------------------------------------------------");
 		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 		String val = in.nextLine();
@@ -46,6 +46,7 @@ public class Meny {
 		break;
 		
 		case "6":
+			///////////////////////////UNDER CONSTRUCTION////////////////////////////
 			// Using XmlIO to save an object to file, errors are unexpected
 			// (write protected files)
 			try {
