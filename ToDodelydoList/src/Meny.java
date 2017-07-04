@@ -10,8 +10,13 @@ public class Meny {
 	String val = in.nextLine();
 
 	public static void meny() {
-		System.out.println("VÄLJ & SVÄLJ!");
-		System.out.println("1-5 & 8 (olika funktioner...learning by doing)");
+		ToDo.listAlla();
+		System.out.println("-------------------------VÄLJ & SVÄLJ!---------------------------");
+		System.out.println("1.) Lista Dina uppdrag.  2.) Nytt uppdrag       3.) Ändra Status");
+		System.out.println("4.) Ta bort valfri.      5.) Ta bort Avklarade  6.) error");
+		System.out.println("7.) Sök                  8.) Avsluta");
+		System.out.println("-----------------------------------------------------------------");
+		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 		String val = in.nextLine();
 		
 		switch (val) {
@@ -25,17 +30,14 @@ public class Meny {
 		break;
 		
 		case "2": Scan.ny();
-				  ToDo.listAlla();
 				  Meny.meny();
 		break; 
 		
 		case "3": Scan.gjordVäxel();
-			      ToDo.listAlla();
 			      Meny.meny();
 		break; 
 		
 		case "4": Scan.bort();
-				  ToDo.listAlla();
 				  Meny.meny();
 		break;
 		
@@ -58,7 +60,8 @@ public class Meny {
 			break;	
 				
 		case "7":	
-				//	ladda xlm			
+			Scan.sök();	
+			Meny.meny();
 			break;	
 	
 		

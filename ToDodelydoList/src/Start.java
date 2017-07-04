@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 public class Start {
 
 	public static void main(String[] args) {
@@ -15,12 +15,12 @@ public class Start {
 //		Meny.meny();
 		ToDo.listAlla();
 //		
-		ToDo.‰ndraStatusPÂEn(1);
-		ToDo.‰ndraStatusPÂEn(0);
+//		ToDo.‰ndraStatusPÂEn(1);
+//		ToDo.‰ndraStatusPÂEn(0);
 //		
-		ToDo.listAlla();
-		ToDo.taBortAvklarade();
-		ToDo.listAlla();
+//		ToDo.listAlla();
+//		ToDo.taBortAvklarade();
+//		ToDo.listAlla();
 //		Scan.gjordV‰xel();
 //		
 //		ToDo.listAlla();

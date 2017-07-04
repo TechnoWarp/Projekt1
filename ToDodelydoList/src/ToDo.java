@@ -28,13 +28,16 @@ public class ToDo {
 
 	public static void listAlla(){
 		int i = 0;
+		System.out.println("_________________________________________________________________");
 		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-		System.out.println("index" + "  " + "id" +"  Status    Skapad     Klockan");
+		System.out.println("index" + "  " + "id" +"  Status    Skapad     Klockan  Uppdrag");
 		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 		for(Sak s : alla){		
 			System.out.println(i + "      " + s.printPost());
 			i++;
 		}
+		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+		System.out.println("-?-?-?-?-?-?-?-?-?-?-?-?-?-?-?-?-?-?-?-?-?-?-?-?-?-?-?-?-?-?-?-?-");
 		System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
 	}
 
@@ -55,6 +58,10 @@ public class ToDo {
 	} 
 
 	public static void ‰ndraStatusPÂEn(int in){ // pipar index
+		if (alla.size() < in) {
+			System.out.println("Den posten finns inte...fˆr hˆgt nummer...fˆrsˆk igen...");
+			Scan.gjordV‰xel();
+		}
 		int i = 0;							
 		for(Sak grej : alla){
 			if (i ==in){
@@ -66,6 +73,10 @@ public class ToDo {
 	} 
 
 	public static void taBort(int in){ // pipar index
+		if (alla.size() < in) {
+			System.out.println("Den posten finns inte...fˆr hˆgt nummer...fˆrsˆk igen...");
+			Scan.bort();
+		}
 		System.out.println("Vilken Ska bort?");
 		alla.remove(in);	
 		System.out.println("sak pÂ index " + in +" blev fˆrintad och de efter index " + in + " blev uppflyttade och fick nytt l‰gre index.");
@@ -85,5 +96,15 @@ public class ToDo {
 		System.out.println("Alla AVKLARADE! ‰r nu borst‰dade ur systemet.");
 
 	}
-	
+	public static void kolla(String X){
+		int i = -1;
+			for(Sak grej : alla){
+				i++;
+				if (grej.getBeskrivning().equals(X)){
+					System.out.println("SuccÈ..." + X + " Existerar i knasprogrammet!!!...pÂ index: "+ i);
+					continue;
+				}
+			}
+		
+}
 }
